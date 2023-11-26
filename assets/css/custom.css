@@ -1,0 +1,84 @@
+.mw-700{
+	max-width: 700px;
+    margin: 0 auto;
+}
+body {
+	padding-top: 72px;
+}
+
+.p-0-100 {
+	padding: 0 100px
+}
+
+.answer-box {
+	padding: 10px;
+    background: #EDF2FB;
+    margin-bottom: 5px
+}
+.answer-box label {
+	font-size: 12px;
+	font-style: italic;
+}
+.comment-box {
+	padding: 0 30px;
+    background: #CCDBFD;
+    margin-bottom: 10px;
+}
+.submit_star {
+	font-size: 20px;
+	cursor: pointer;
+}
+.submit_star.bxs-star {
+	color: #ffc107;
+}
+.cur-star-inp {
+	width: 0;
+    height: 0;
+    padding: 0;
+    position: absolute;
+    border: 0;
+}
+
+
+
+/* Star Rating */
+.rating {
+    float: left;
+    height: 40px;
+    text-align: left;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+    /*top:-9999px;*/
+	display: none;
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:35px;
+    color:#ccc;
+}
+.rating:not(:checked) > label:before {
+	content: "\2605";
+}
+.rating > input:checked ~ label, .rating input[checked="checked"] ~ label {
+    color: #ffc700;
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
